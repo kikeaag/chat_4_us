@@ -20,7 +20,7 @@ export default function Home() {
 
     const channel = pusher.subscribe("chat");
 
-    channel.bind("message", (data) => {
+    channel.bind("message", (data: Message) => {
       setMessages((prev) => [...prev, data]);
     });
 
