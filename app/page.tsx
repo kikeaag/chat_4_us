@@ -66,7 +66,7 @@ export default function Home() {
                   background: isMe ? "#DCF8C6" : "#E5E5EA",
                 }}
               >
-                <div>{m.text}</div>
+                <div style={{color: 'black'}}>{m.text}</div>
                 <div style={styles.time}>{m.time}</div>
               </div>
             </div>
