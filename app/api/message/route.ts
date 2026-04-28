@@ -1,3 +1,4 @@
+import { NextRequest } from "next/server";
 import Pusher from "pusher";
 
 const pusher = new Pusher({
@@ -8,7 +9,7 @@ const pusher = new Pusher({
   useTLS: true,
 });
 
-export async function POST(req) {
+export async function POST(req: NextRequest) {
   const body = await req.json();
 
   await pusher.trigger("chat", "message", body);

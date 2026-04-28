@@ -94,4 +94,4 @@ const styles = {
   inputRow: { display: "flex", padding: 10 },
   input: { flex: 1, marginRight: 10 },
   time: { fontSize: 10, opacity: 0.6, textAlign: "right" },
-};
+} as const;
